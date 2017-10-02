@@ -65,6 +65,23 @@ def icy_hot? (a,b)
 end
 
 
+
 # TODO - write closer_to
+
+def closer_to (a,b,c)
+	ab = (a-b).abs
+	ac = (a-c).abs
+	if ab < ac 
+		return b
+	end
+
+	if ac < ab 
+		return c
+	end
+
+	if ac = ab
+		return 0
+	end
+end
 
 # TODO - write two_as_one?
