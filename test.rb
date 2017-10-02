@@ -15,10 +15,10 @@ describe 'methods_quiz' do
 
 	describe 'not_string' do
 			it 'no not' do 
-				not_string(apple).must_equal(notapple)
+				not_string("apple").must_equal(notapple)
 			end
 			it 'already has not' do 
-				not_string(notapple).must_equal(notapple)
+				not_string("notapple").must_equal(notapple)
 			end
 	end
 end
