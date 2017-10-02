@@ -35,8 +35,8 @@ describe 'methods_quiz' do
 			it 'not icy hot' do 
 				icy_hot?(40, 90).must_equal(false)
 			end
-	end
-
+	end 
+	
 	describe 'closer_to' do
 			it '' do 
 				closer_to(4,3,9).must_equal(3)
