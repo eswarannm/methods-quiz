@@ -12,4 +12,13 @@ describe 'methods_quiz' do
 				has_teen?(2,0,3).must_equal(false)
 			end
 	end
+
+	describe 'not_string' do
+			it 'no not' do 
+				not_string(apple).must_equal(notapple)
+			end
+			it 'already has not' do 
+				not_string(notapple).must_equal(notapple)
+			end
+	end
 end
