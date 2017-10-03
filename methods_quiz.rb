@@ -85,3 +85,12 @@ def closer_to (a,b,c)
 end
 
 # TODO - write two_as_one?
+
+def two_as_one? (a,b,c)
+	ab = a + b
+	ac = a + c
+	bc = b + c
+	
+	return ab == c || ac == b || bc == b
+end
+	
