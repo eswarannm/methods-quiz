@@ -1,3 +1,4 @@
+
 require './test_setup'
 require './methods_quiz'
 
@@ -36,13 +37,16 @@ describe 'methods_quiz' do
 				icy_hot?(40, 90).must_equal(false)
 			end
 	end 
-	
-	describe 'closer_to' do
-			it '' do 
-				closer_to(4,3,9).must_equal(3)
+
+	describe 'two_as_one?' do
+			it 'true' do 
+				two_as_one?(6,3,9).must_equal(true)
 			end
-			it 'one hot' do 
-				closer_to(4,3,5).must_equal(0)
+			it 'false' do
+				two_as_one?(1,6,3).must_equal(false)
 			end
 	end
+
+
+
 end
