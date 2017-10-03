@@ -18,26 +18,13 @@ end
 
 # TODO - write not_string
 
-# def not_string (string)
-
-
-
-# 	if string[0] == n
-# 		if string[1] == o
-# 			if string[2] == t 
-# 				return string
-# 			end
-# 		end
-# 	end
-
-# 	if string[0] != n
-# 		if string[1] != o
-# 			if string[2] != t 
-# 				return "not#{word}"
-# 			end
-# 		end
-# 	end
-# end
+ def not_string (string)
+	 if string[0..2] == "not"
+		 return string
+	 end
+	 
+	 return "not" + string
+ end
 
 # TODO - write icy_hot?
 
